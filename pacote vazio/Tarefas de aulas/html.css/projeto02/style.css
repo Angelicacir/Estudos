@@ -1,4 +1,11 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Fredericka+the+Great & family= Inter:wght@100;200;300;400;500; 600 & family= Lato:wght@400;700 & family= Open+Sans:wght@300 & family= Passion+One & family= Press+Start+2P & família = Sriracha &family= Ubuntu:ital,wght@0,300;0,400;0,500; 0,700;1,300;1,400;1,500 & display=trocar');
+
+:root{
+    --font01: verdana, Geneva, Tahoma, sans-serif;
+    --font02: 'Sriracha', cursive;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -6,6 +13,7 @@
 
 html, body{
     min-height: 100hv;
+    font-family: var(--font01);
 }
 header{
     background-color: black;
@@ -15,6 +23,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps; /* font-variancia para letras maiusculas*/
+    font-family: var(--font01);
+    font-size: 5vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -35,6 +45,8 @@ section{ /*configurações para o efeito paralac*/
     padding-bottom: 10vh;
     line-height: 2rem; /*espaçamento entre as linhas*/
     padding-left: 30px; /*espaçamento no inicio do texto*/
+    font-family: var(--font02);
+    font-weight: bold;
 }
 section.fundo-normal{
     background-color: white;
@@ -46,7 +58,8 @@ section.fundo-img{
 }
 section.fundo-img > p{
     /*confi. do paragrafo quando tiver fundo branco na img*/
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.142);
 }
 
