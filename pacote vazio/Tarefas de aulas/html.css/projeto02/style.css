@@ -40,13 +40,16 @@ a:hover{
     /*underline, sublinhado*/
 }
 
-section{ /*configurações para o efeito paralac*/
+section{ /*configurações para o efeito parallax*/
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2rem; /*espaçamento entre as linhas*/
     padding-left: 30px; /*espaçamento no inicio do texto*/
     font-family: var(--font02);
     font-weight: bold;
+}
+section > p{
+    padding-bottom: 2em;
 }
 section.fundo-normal{
     background-color: white;
@@ -55,14 +58,26 @@ section.fundo-normal{
 section.fundo-img{
     background-color: rgb(107, 105, 105);
     color: white;
+    box-shadow: inset /*insert= para dentro*/ 2px 3px 13px 0px black;
+    background-attachment: fixed; /*efeito parallax*/
 }
 section.fundo-img > p{
     /*confi. do paragrafo quando tiver fundo branco na img*/
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.142);
+    background-color: rgba(49, 48, 48, 0.411);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.546);
 }
-
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
 
 footer{
     background-color: black;
