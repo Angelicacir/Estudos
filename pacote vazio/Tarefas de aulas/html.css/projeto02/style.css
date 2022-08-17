@@ -1,0 +1,59 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100hv;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps; /* font-variancia para letras maiusculas*/
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+    /*underline, sublinhado*/
+}
+
+section{ /*configurações para o efeito paralac*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2rem; /*espaçamento entre as linhas*/
+    padding-left: 30px; /*espaçamento no inicio do texto*/
+}
+section.fundo-normal{
+    background-color: white;
+    color: black;
+}
+section.fundo-img{
+    background-color: rgb(107, 105, 105);
+    color: white;
+}
+section.fundo-img > p{
+    /*confi. do paragrafo quando tiver fundo branco na img*/
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.142);
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
